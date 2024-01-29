@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3F5FC;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 80px;
+}
+
+.logo {
+    height: 48px;
+    width: 31px;
+    margin: 0 44px;
+}
+
+.entrada {
+    width: 680px;
+    height: 784px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 128px;
+}
+
+.texto-entrada {
+    color: #0A3871;
+    background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    border: none;
+    height: 667px;
+}
+
+.aviso {
+    display: flex;
+    align-items: center;
+    height: 18px;
+    gap: 8px;
+    color: #495057;
+}
+
+.aviso__img {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+.aviso__texto {
+    font-size: 12px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.criptografar-botton, 
+.descriptografar-botton {
+    width: 328px;
+    padding: 24px 0;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.criptografar-botton {
+    color: #ffffff;
+    background-color: #0A3871;
+    border: none;
+}
+
+.descriptografar-botton {
+    color: #0A3871;
+    background-color: transparent;
+    border: 1px solid #0A3871;
+}
+
+.saida {
+    background-color: #ffffff;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    padding: 32px;
+    width: 400px;
+    height: 880px;
+}
+
+.resultado {
+    display: none;
+    flex-direction: column;
+}
+
+.texto-saida {
+    height: 781px;
+    font-size: 24px;
+    color: #495057;
+}
+
+.copiar-botton {
+    width: 100%;
+    color: #0A3871;
+    background-color: transparent;
+    border: 1px solid #0A3871;
+    padding: 24px 0;
+    border-radius: 24px;
+    font-size: 16px;
+    margin-top: 32px;
+}
+
+.saida__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.saida__conteudo__img {
+    width: 336px;
+    height: 304px;
+}
+
+.saida__conteudo__texto1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #343A40;
+    margin: 32px 0 16px;
+}
+
+.saida__conteudo__texto2 {
+    font-size: 19px;
+    color: #495057;
+}
+
+.footer {
+    background-color: #0A3871;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.redes-sociais-link {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.redes-sociais-img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        display: block;
+        padding: 40px;
+        gap: 0;
+    }
+    
+    .logo {
+        height: 50px;
+        margin: 0;
+    }
+    
+    .entrada {
+        width: 680px;
+        height: 667px;
+        margin-top: 116px;
+    }
+    
+    .texto-entrada {
+        color: #0A3871;
+        background-color: #F3F5FC;
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        border: none;
+        height: 580px;
+    }
+    
+    .saida {
+        width: auto;
+        height: auto;
+        margin-top: 64px;
+    }
+    
+    .texto-saida {
+        height: auto;
+    }
+    
+    .saida__conteudo__img {
+        display: none;
+    }
+    
+    .saida__conteudo__texto1 {
+        margin: 0 0 16px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        display: block;
+        padding: 24px 16px;
+        gap: 0;
+    }
+    
+    .logo {
+        margin: 0;
+    }
+    
+    .entrada {
+        width: 343px;;
+        height: auto;
+        margin-top: 80px;
+    }
+    
+    .texto-entrada {
+        height: 300px;
+    }
+    
+    .botoes {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .criptografar-botton, 
+    .descriptografar-botton {
+        width: 100%;
+    }
+    
+    .saida {
+        height: auto;
+        margin-top: 64px;
+    }
+    
+    .resultado {
+        display: none;
+        flex-direction: column;
+    }
+    
+    .texto-saida {
+        height: auto;
+        overflow-wrap: break-word;
+    }
+    
+    .saida__conteudo__img {
+        display: none;
+    }
+    
+    .saida__conteudo__texto1 {
+        margin: 0 0 16px;
+    }
+
+    .saida__conteudo__texto2 {
+        font-size: 17px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
