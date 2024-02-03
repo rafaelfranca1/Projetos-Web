@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+:root {
+    --cor-um: #E7E9FF; 
+    --cor-dois: #1e3163;
+    --cor-tres: #1F2331; 
+    --cor-quatro: #ffffff;
+    --cor-cinco: #1A1E2C; 
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #F3F5FC;
+    background-color: var(--cor-um);
     height: 100vh;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
@@ -35,8 +43,8 @@ main {
 }
 
 .texto-entrada {
-    color: #0A3871;
-    background-color: #F3F5FC;
+    color: var(--cor-dois);
+    background-color: var(--cor-um);
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     border: none;
@@ -48,7 +56,7 @@ main {
     align-items: center;
     height: 18px;
     gap: 8px;
-    color: #495057;
+    color: var(--cor-tres);
 }
 
 .aviso__img {
@@ -75,19 +83,19 @@ main {
 }
 
 .criptografar-botton {
-    color: #ffffff;
-    background-color: #0A3871;
+    color: var(--cor-quatro);
+    background-color: var(--cor-dois);
     border: none;
 }
 
 .descriptografar-botton {
-    color: #0A3871;
+    color: var(--cor-dois);
     background-color: transparent;
-    border: 1px solid #0A3871;
+    border: 1px solid var(--cor-dois);
 }
 
 .saida {
-    background-color: #ffffff;
+    background-color: var(--cor-quatro);
     border-radius: 32px;
     box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
     padding: 32px;
@@ -103,14 +111,14 @@ main {
 .texto-saida {
     height: 781px;
     font-size: 24px;
-    color: #495057;
+    color: var(--cor-tres);
 }
 
 .copiar-botton {
     width: 100%;
-    color: #0A3871;
+    color: var(--cor-dois);
     background-color: transparent;
-    border: 1px solid #0A3871;
+    border: 1px solid var(--cor-dois);
     padding: 24px 0;
     border-radius: 24px;
     font-size: 16px;
@@ -135,18 +143,18 @@ main {
 .saida__conteudo__texto1 {
     font-size: 25px;
     font-weight: 700;
-    color: #343A40;
+    color: var(--cor-cinco);
     margin: 32px 0 16px;
 }
 
 .saida__conteudo__texto2 {
     font-size: 19px;
-    color: #495057;
+    color: var(--cor-tres);
 }
 
 .footer {
-    background-color: #0A3871;
-    color: #ffffff;
+    background-color: var(--cor-dois);
+    color: var(--cor-quatro);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,7 +170,7 @@ main {
 
 .redes-sociais-link {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--cor-quatro);
     display: flex;
     align-items: center;
     gap: 3px;
@@ -192,8 +200,8 @@ main {
     }
     
     .texto-entrada {
-        color: #0A3871;
-        background-color: #F3F5FC;
+        color: var(--cor-dois);
+        background-color: var(--cor-um);
         font-family: 'Inter', sans-serif;
         font-size: 32px;
         border: none;
