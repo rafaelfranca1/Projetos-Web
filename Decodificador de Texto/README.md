@@ -18,13 +18,9 @@ A interface do projeto é amigável e intuitiva, com uma seção de entrada para
 
 ### Exemplo de Uso
 
-#### Antes da Criptografia
-
-![Antes da Criptografia](images/screenshot(1).png)
-
-#### Após a Criptografia
-
-![Após a Criptografia](images/screenshot(2).png)
+| Antes da Criptografia                            | Após a Criptografia                             |
+|--------------------------------------------------|--------------------------------------------------|
+| ![Antes da Criptografia](images/screenshot(1).png) | ![Após a Criptografia](images/screenshot(2).png) |
 
 ## Notas Técnicas
 
