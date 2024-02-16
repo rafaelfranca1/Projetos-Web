@@ -22,6 +22,10 @@ A interface do projeto é amigável e intuitiva, com uma seção de entrada para
 |--------------------------------------------------|--------------------------------------------------|
 | ![Antes da Criptografia](images/screenshot(1).png) | ![Após a Criptografia](images/screenshot(2).png) |
 
+## Testar o Projeto
+
+Você pode testar o projeto [aqui](https://rafaelfranca1.github.io/Projetos-Web/Decodificador%20de%20Texto/).
+
 ## Notas Técnicas
 
 O projeto utiliza a fonte "Inter" do Google Fonts e apresenta um design responsivo para diferentes tamanhos de tela.
