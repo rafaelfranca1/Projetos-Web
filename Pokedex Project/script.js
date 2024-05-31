@@ -16,7 +16,7 @@ request.onload = function() {
     for (let i = 1; i <= 151; i++) {
         mainConteudo += `
         <div class="pokemon-card">
-            <img class="pokemon-image" src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/${i}.png?raw=true" alt="Pokemon ${nomePokemon[i-1]}">
+            <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png" alt="Pokemon ${nomePokemon[i-1]}">
             <p class="pokemon-number">#${i.toString().padStart(3, '0')}</p>
             <h3 class="pokemon-name">${nomePokemon[i-1]}</h3>
         </div>
