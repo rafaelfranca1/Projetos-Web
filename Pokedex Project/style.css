@@ -32,7 +32,7 @@ body {
 
 .logo-title {
     margin: 0;
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .search-bar {
@@ -70,6 +70,7 @@ body {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;/*centraliza verticalmente*/
+    font-size: 1rem;
 }
 
 .pokemon-name {
@@ -85,7 +86,6 @@ body {
 
 .pokemon-number {
     color: #2d2d2d;
-    font-size: 16px;
     background-color: #a9a9a9;
     border-radius: 5px;
     padding: 2px 6px;
@@ -124,14 +124,120 @@ body {
     height: 20px;
 }
 
-@media (max-width: 768px) {
-    #main-header, #footer {
-        background-color: #0000A0;
+@media (max-width: 768px)  {
+    #main-header {
+        padding: 10px 0;
+    }
+    
+    .main-nav {
+        justify-content: center;
+        gap: 12rem;
+    }
+    
+    .logo-image {
+        height: 48px;
+    }
+    
+    #search-input {
+        background-color: #1c1c1c;
+        color: #fff;
+        padding: 8px;
+        border: none;
+        border-radius: 4px 0px 0px 4px;
+    }
+    
+    .search-button {
+        background-color: #2d2d2d;
+        color: #fff;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 0px 4px 4px 0px;
+        cursor: pointer;
+    }
+    
+    .pokemon-card {
+        width: 200px;
+        height: 290px;
+        margin: 10px;
+        border-radius: 16px;
+    }
+    
+    .pokemon-name {
+        color: #a9a9a9;
+        margin: 8px;
+        text-align: center;
+    }
+    
+    .pokemon-number {
+        border-radius: 4px;
+        margin: 5px;
+    }
+    
+    #footer {
+        gap: 12px;
+        padding: 12px;
     }
 }
 
 @media (max-width: 425px) {
-    #main-header, #footer {
-        background-color: #0000A0;
+    #main-header {
+        padding: 10px 0;
+    }
+    
+    .main-nav {
+        justify-content: center;
+        gap: 4rem;
+    }
+    
+    .logo-image {
+        height: 48px;
+    }
+    
+    .logo-title {
+        display: none;
+    }
+    
+    #search-input {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+    
+    .search-button {
+        padding: 5px 7px;
+        font-size: 0.8rem;
+    }
+    
+    .pokemon-card {
+        width: 140px;
+        height: 215px;
+        margin: 10px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+    }
+    
+    .pokemon-name {
+        margin: 8px;
+    }
+    
+    .pokemon-number {
+        border-radius: 4px;
+        padding: 2px 3px;
+        margin: 4px;
+    }
+    
+    #footer {
+        gap: 6px;
+        padding: 10px; 
+        flex-direction: column;
+        font-size: 1rem;
+    }
+    
+    .social-links {
+        gap: 10px;
+    }
+    
+    .social-link-image {
+        width: 16px;
+        height: 16px;
     }
 }
