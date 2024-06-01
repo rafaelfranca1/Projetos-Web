@@ -1,25 +1,43 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Pokedex | FireRed</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="logo">
-                    <img src="https://www.freepnglogos.com/uploads/pokemon-symbol-logo-png-31.png">
-                    <h1>Pokedex</h1>
-                </div>
-                <div class="search-bar">
-                    <input type="text" id="search-input" placeholder="Pesquisar...">
-                    <button type="submit" onclick="pesquisar()">Buscar</button>
-                </div>
-            </nav>
-        </header>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex | FireRed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <nav class="main-nav">
+            <div class="logo-container">
+                <img class="logo-image" src="images/logo.png">
+                <h1 class="logo-title">Pokedex</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Pesquisar...">
+                <button type="submit"class="search-button" onclick="pesquisar()">Buscar</button>
+            </div>
+        </nav>
+    </header>
 
-        <main class="pokemon-list"></main>
+    <main id="main-content"></main>
 
-        <script src="script.js"></script>
-    </body>
+    <footer id="footer">
+        <p class="footer-credit">Criado por Rafael de França</p>
+
+        <div class="social-links">
+            <a class="social-link" href="https://github.com/rafaelfranca1" target="_blank">
+                <img class="social-link-image" src="images/github.png" alt="GitHub Icon"> GitHub
+            </a>
+            <a class="social-link" href="https://www.instagram.com/rafaelfrncs/" target="_blank">
+                <img class="social-link-image" src="images/instagram.png" alt="Instagram Icon"> Instagram
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/rafael-franca-ofc/" target="_blank">
+                <img class="social-link-image" src="images/linkedin.png" alt="LinkedIn Icon"> LinkedIn
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

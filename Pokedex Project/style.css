@@ -1,35 +1,62 @@
-body {
-    background-color: #1c1c1c;
-    font-family: 'Ubuntu', sans-serif;
+* {
     margin: 0;
+    padding: 0;
 }
 
-header {
+body {
+    background-color: #1c1c1c;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#main-header {
     background-color: #f04242;
     color: #1c1c1c;
     padding: 10px 10px;
 }
 
-nav {
+.main-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav img {
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
     height: 46px;
 }
 
-nav h1 {
+.logo-title {
     margin: 0;
     font-size: 48px;
 }
 
-.logo {
+.search-bar {
     display: flex;
 }
 
-.pokemon-list {
+#search-input {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.search-button {
+    background-color: #2d2d2d;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+
+#main-content {
     text-align: center;
 }
 
@@ -68,23 +95,43 @@ nav h1 {
     align-self: center;
 }
 
-.search-bar {
+#footer {
+    background-color: #f04242;
+    color: #ffffff;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
 }
 
-.search-bar input {
-    background-color: #1c1c1c;
-    color: #fff;
-    padding: 8px;
-    border: none;
-    border-radius: 4px 0px 0px 4px;
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
-.search-bar button {
-    background-color: #2d2d2d;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 0px 4px 4px 0px;
-    cursor: pointer;
+.social-link {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.social-link-image {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    #main-header, #footer {
+        background-color: #0000A0;
+    }
+}
+
+@media (max-width: 425px) {
+    #main-header, #footer {
+        background-color: #0000A0;
+    }
 }

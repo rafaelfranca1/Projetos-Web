@@ -11,7 +11,7 @@ function criaCards() {
         let pokemons = request.response;
         listaNomes(pokemons);
         
-        let mainTag = document.querySelector('.pokemon-list');
+        let mainTag = document.getElementById('main-content');
         let mainConteudo = "";
         
         for (let i = 1; i <= 151; i++) {
