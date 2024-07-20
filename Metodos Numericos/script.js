@@ -96,3 +96,99 @@ function bissecao(a, b, epsilon, f) {
     MathJax.typeset();
     document.getElementById('tabelaDados').innerHTML = tabelaConteudo;
 }
+
+function trocaPagina(pagina) {
+    var conteudoPaginas = {
+        paginaBisseccao: `
+            <h1 class="mb-4 display-1">Metodo da Bissecção</h1>
+            <p class="mb-3 fs-5">
+                O método de bissecção em matemática é um método de localização de raízes que divide repetidamente um intervalo ao meio e, em seguida, seleciona um subintervalo no qual uma raiz deve estar para processamento posterior.
+            </p>
+
+            <div class="container mt-5 mb-5">
+                <div class="card p-4">
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">f(x)</span>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="inputFuncao" placeholder="Função">
+                                <label for="inputFuncao">Função</label>
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="inputA" placeholder="a">
+                                    <label for="inputA">Limite inferior (a)</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="inputB" placeholder="b">
+                                    <label for="inputB">Limite superior (b)</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="inputEpsilon" placeholder="epsilon">
+                                    <label for="inputEpsilon">Precisão (epsilon)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button onclick="calcularRaiz()" type="submit" class="btn btn-primary mb-3">Calcular</button>
+
+                        <div id="resultados"></div>
+                    </div>
+                </div>
+            </div>
+        `,
+        paginaFalsaPosicao: `
+            <h1 class="mb-4 display-1">Metodo da Falsa Posição</h1>
+            <p class="mb-3 fs-5">
+                O método da falsa posição é um método numérico para resolver equações não lineares. Ele é uma modificação do método da bissecção, que é mais lento.
+            </p>
+        `,
+        paginaNewton: `
+            <h1 class="mb-4 display-1">Metodo de Newton</h1>
+            <p class="mb-3 fs-5">
+                O método de Newton, também conhecido como método de Newton-Raphson, é um método iterativo para encontrar raízes de equações polinomiais e funções transcendentes.
+            </p>
+        `,          
+        paginaSecante: `
+            <h1 class="mb-4 display-1">Metodo da Secante</h1>
+            <p class="mb-3 fs-5">
+                O método da secante é um método numérico para encontrar raízes de uma função real. É uma técnica de interpolação linear que usa duas aproximações iniciais para uma raiz.
+            </p>
+        `
+    }
+
+    var nomePaginas = ["paginaBisseccao", "paginaFalsaPosicao", "paginaNewton", "paginaSecante"]
+
+    nomePaginas.forEach(p => document.getElementById(p).classList.remove("active"))
+    document.getElementById(pagina).classList.add("active");
+    document.querySelector('main').innerHTML = conteudoPaginas[pagina]
+}
+
+document.getElementById("paginaBisseccao").addEventListener("click", function(evento) {
+    evento.preventDefault(); 
+    trocaPagina("paginaBisseccao")
+});
+
+document.getElementById("paginaFalsaPosicao").addEventListener("click", function(evento) {
+    evento.preventDefault(); 
+    trocaPagina("paginaFalsaPosicao")
+});
+
+document.getElementById("paginaNewton").addEventListener("click", function(evento) {
+    evento.preventDefault(); 
+    trocaPagina("paginaNewton")       
+});
+
+document.getElementById("paginaSecante").addEventListener("click", function(evento) {
+    evento.preventDefault(); 
+    trocaPagina("paginaSecante") 
+});
+
+trocaPagina("paginaBisseccao")

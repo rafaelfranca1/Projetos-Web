@@ -11,77 +11,33 @@
 
 <body data-bs-theme="dark">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
-            <a class="navbar-brand" href="#">Métodos Numéricos</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Bissecção</span></a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand">MÉTODOS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="paginaBisseccao" class="nav-link" href="#">Bissecção</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Falsa Posição</a>
+                        <a id="paginaFalsaPosicao" class="nav-link" href="#">Falsa Posição</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Newton</a>
+                        <a id="paginaNewton" class="nav-link" href="#">Newton</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Secante</a>
+                        <a id="paginaSecante" class="nav-link" href="#">Secante</a>
                     </li>
-                </ul>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main class="container mb-5">
-        <h1 class="mb-4 display-1">Metodo da Bissecção</h1>
-        <p class="mb-3 fs-5">
-            O método de bissecção em matemática é um método de localização de raízes que divide repetidamente um intervalo ao meio e, em seguida, seleciona um subintervalo no qual uma raiz deve estar para processamento posterior.
-        </p>
-
-        <div class="container mt-5 mb-5">
-            <div class="card p-4">
-                <div class="card-body">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text">f(x)</span>
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="inputFuncao" placeholder="Função">
-                            <label for="inputFuncao">Função</label>
-                        </div>
-                    </div>
-
-                    <div class="row g-3">
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="inputA" placeholder="a">
-                                <label for="inputA">Limite inferior (a)</label>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="inputB" placeholder="b">
-                                <label for="inputB">Limite superior (b)</label>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="inputEpsilon" placeholder="epsilon">
-                                <label for="inputEpsilon">Precisão (epsilon)</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button onclick="calcularRaiz()" type="submit" class="btn btn-primary mb-3">Calcular</button>
-
-                    <div id="resultados"></div>
-                </div>
-            </div>
-        </div>
-    </main>
+    <main class="container mb-5"></main>
 
     <script src="script.js"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
